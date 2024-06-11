@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+}
+
+.header .icon {
+  width: 25px;
+}
+
+.header .youtube-logo {
+  width: 120px;
+}
