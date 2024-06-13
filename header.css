@@ -3,13 +3,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 15px;
+  padding: 10px 15px;
   padding-bottom: 12px;
   border-bottom: 1px solid rgb(220, 220, 220);
   position: fixed;
-  top: 5px;
+  top: 0px;
   left: 0;
   right: 0;
+  background-color: white;
 }
 
 .left-header {
@@ -46,6 +47,11 @@
   font-size: 18px;
 }
 
+input:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+
 .search-icon {
  background-color: rgb(220, 220, 220);
  height: 44.5px;
@@ -65,9 +71,10 @@
   padding: 8px 10px;
   font-size: 12px;
   bottom: -40px;
-  opacity: 0;
+  opacity:0;
   pointer-events: none;
   white-space: nowrap;
+  transition: opacity 0.15s;
 }
 
 .search-hover-apps {
@@ -81,13 +88,14 @@
   opacity: 0;
   pointer-events: none;
   white-space: nowrap;
+  transition: opacity 0.15s;
 }
 
-.search-icon:hover .search-hover-apps {
+.search-icon:hover .search-hover {
   opacity: 1;
 }
 
-.voice-search-icon:hover .search-hover-apps {
+.voice-search-icon:hover .search-hover {
   opacity: 1;
 }
 
